@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقدمة للقناة ومدونة المحترف | مدونة المحترف</title>
+    <meta name="description" content="مرحباً بكم في محطة المعرفة والإبتكار، قناة ومدونة المحترف، قناة مختصة بمجال كل ماهو تقني ومعلوماتي وربحي من الأنترنيت">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Almarai:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .article-page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 32px 24px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        
+        .article-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        
+        .article-meta-single {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin: 16px 0;
+            color: #6B7280;
+            font-size: 14px;
+        }
+        
+        .article-content {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #374151;
+        }
+        
+        .article-content h2 {
+            font-size: 24px;
+            margin: 32px 0 16px 0;
+            color: #111827;
+        }
+        
+        .article-content h3 {
+            font-size: 20px;
+            margin: 24px 0 12px 0;
+            color: #111827;
+        }
+        
+        .article-content p {
+            margin-bottom: 16px;
+        }
+        
+        .article-content ul, .article-content ol {
+            margin: 16px 0;
+            padding-right: 24px;
+        }
+        
+        .article-content li {
+            margin-bottom: 8px;
+        }
+        
+        .article-content blockquote {
+            background: #EFF6FF;
+            border-right: 4px solid #0066FF;
+            padding: 16px 20px;
+            margin: 24px 0;
+            font-style: italic;
+            color: #374151;
+        }
+        
+        .social-share {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 32px 0;
+            padding: 24px 0;
+            border-top: 1px solid #E5E7EB;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        
+        .share-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .share-btn.facebook { background: #1877F2; }
+        .share-btn.twitter { background: #1DA1F2; }
+        .share-btn.linkedin { background: #0077B5; }
+        .share-btn.whatsapp { background: #25D366; }
+        
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .related-articles {
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 2px solid #E5E7EB;
+        }
+        
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 24px;
+        }
+        
+        .related-card {
+            background: #F9FAFB;
+            border-radius: 8px;
+            padding: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .related-card:hover {
+            background: #EFF6FF;
+            transform: translateY(-2px);
+        }
+        
+        .related-card h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #111827;
+        }
+        
+        .related-card p {
+            font-size: 14px;
+            color: #6B7280;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="service-links">
+                    <a href="#privacy">سياسة الخصوصية</a>
+                    <a href="#terms">اتفاقية الاستخدام</a>
+                    <a href="#about">من نحن؟</a>
+                    <a href="#contact">اتصل بنا</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="تليجرام"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="index.html" style="color: #0066FF; text-decoration: none;">المحترف</a></h1>
+                    <span>حصري التقنية</span>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html#blog">تدوينات</a></li>
+                        <li><a href="index.html#episodes">حلقات</a></li>
+                        <li><a href="index.html#windows">ويندوز</a></li>
+                        <li><a href="index.html#downloads">تحميلات</a></li>
+                        <li><a href="index.html#social">مواقع التواصل</a></li>
+                        <li><a href="index.html#games">ألعاب</a></li>
+                        <li><a href="index.html#android">أندرويد</a></li>
+                        <li><a href="index.html#free">مجانيات</a></li>
+                        <li><a href="index.html#templates">قوالب</a></li>
+                        <li><a href="index.html#money">الربح المال</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="search-toggle">
+                    <button class="search-btn" onclick="toggleSearch()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="ابحث في المقالات..." class="search-input">
+                <button class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="search-close" onclick="toggleSearch()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="container" style="padding: 16px 24px;">
+        <nav style="font-size: 14px; color: #6B7280;">
+            <a href="index.html" style="color: #0066FF;">الرئيسية</a>
+            <span> / </span>
+            <a href="index.html#money" style="color: #0066FF;">الربح المال</a>
+            <span> / </span>
+            <span>مقدمة للقناة ومدونة المحترف</span>
+        </nav>
+    </div>
+
+    <!-- Article Content -->
+    <div class="article-page">
+        <header class="article-header">
+            <span class="article-category" style="background: #EFF6FF; color: #0047B3; padding: 4px 12px; border-radius: 20px; font-size: 12px;">الربح المال</span>
+            <h1 style="font-size: 2.5rem; margin: 16px 0; color: #111827;">مقدمة للقناة ومدونة "المحترف"</h1>
+            <div class="article-meta-single">
+                <span><i class="far fa-calendar"></i> ديسمبر 9, 2025</span>
+                <span><i class="far fa-user"></i> المحترف</span>
+                <span><i class="far fa-clock"></i> 5 دقائق قراءة</span>
+            </div>
+        </header>
+
+        <div class="article-content">
+            <p style="font-size: 20px; font-weight: 500; color: #374151; margin-bottom: 24px;">
+                مرحباً بكم في محطة المعرفة والإبتكار، قناة ومدونة "المحترف"، قناة مختصة بمجال كل ماهو تقني ومعلوماتي وربحي من الأنترنيت، كذلك أخرى...
+            </p>
+
+            <h2>من نحن؟</h2>
+            <p>
+                نحن فريق من المتخصصين في مجال التكنولوجيا ووسائل الربح من الإنترنت، نهدف إلى مشاركة المعرفة والخبرات مع المتابعين الكرام. مدونة "المحترف" هي منصة تعليمية تهدف إلى تقديم محتوى تقني عالي الجودة باللغة العربية.
+            </p>
+
+            <p>
+                منذ انطلاقتنا، كنا نؤمن بأن المعرفة التقنية يجب أن تكون متاحة للجميع، بغض النظر عن مستوى الخبرة. لذلك نحرص على تقديم المحتوى بشكل مبسط ومفهوم لجميع الفئات.
+            </p>
+
+            <h2>ماذا نقدم؟</h2>
+            <p>
+                نقدم مجموعة واسعة من المواضيع التقنية:
+            </p>
+
+            <ul>
+                <li><strong>دروس تقنية:</strong> شروحات مفصلة للبرامج والتطبيقات</li>
+                <li><strong>أخبار التقنية:</strong> آخر التطورات في عالم التكنولوجيا</li>
+                <li><strong>طرق الربح:</strong> استراتيجيات مجربة لكسب المال عبر الإنترنت</li>
+                <li><strong>مراجعات التطبيقات:</strong> تقييمات شاملة للتطبيقات والبرامج</li>
+                <li><strong>قوالب ومشاريع:</strong> أدوات وموارد للمطورين والمصممين</li>
+            </ul>
+
+            <h2>فلسفتنا في العمل</h2>
+            <blockquote>
+                "المعرفة قوة، والمشاركة علم، والتطبيق هو طريق النجاح"
+            </blockquote>
+
+            <p>
+                نؤمن بأن التكنولوجيا ليست مجرد أدوات، بل وسيلة لتحسين الحياة وزيادة الإنتاجية. لذلك نركز على تقديم محتوى عملي يمكن تطبيقه مباشرة لتحسين تجربة المستخدم.
+            </p>
+
+            <h3>مهمتنا</h3>
+            <p>
+                مهمتنا هي تمكين المتابعين من الاستفادة القصوى من التقنيات الحديثة، سواء في مجال العمل أو الحياة الشخصية. نسعى لتكون مدونة "المحترف" المرجع الأول لكل من يريد التعلم والتطوير في مجال التكنولوجيا.
+            </p>
+
+            <h3>رؤيتنا</h3>
+            <p>
+                نطمح لأن نكون المنصة الرائدة في تقديم المحتوى التقني العربي عالي الجودة، ونساهم في بناء جيل واعٍ تقنياً قادر على المنافسة في السوق العالمي.
+            </p>
+
+            <h2>كيف يمكنكم الاستفادة؟</h2>
+            <p>
+                للاستفادة القصوى من محتوانا، ننصحكم بـ:
+            </p>
+
+            <ol>
+                <li><strong>المتابعة المنتظمة:</strong> اشتركوا في قنواتنا وتابعوا منشوراتنا</li>
+                <li><strong>التطبيق العملي:</strong> جربوا ما تتعلمونه بأنفسكم</li>
+                <li><strong>المشاركة:</strong> شاركوا المحتوى مع من يحتاجه</li>
+                <li><strong>التغذية الراجعة:</strong> شاركونا آراءكم واقتراحاتكم</li>
+            </ol>
+
+            <p>
+                نتطلع إلى رحلة ممتعة ومفيدة معكم في عالم التقنية والابتكار. لا تترددوا في التواصل معنا لأي استفسار أو اقتراح.
+            </p>
+
+            <p style="text-align: center; font-style: italic; color: #6B7280; margin-top: 32px;">
+                شكراً لثقتكم بنا، ونتطلع لخدمتكم دائماً
+            </p>
+        </div>
+
+        <!-- Social Share -->
+        <div class="social-share">
+            <button class="share-btn facebook" data-platform="facebook">
+                <i class="fab fa-facebook-f"></i>
+                فيسبوك
+            </button>
+            <button class="share-btn twitter" data-platform="twitter">
+                <i class="fab fa-twitter"></i>
+                تويتر
+            </button>
+            <button class="share-btn linkedin" data-platform="linkedin">
+                <i class="fab fa-linkedin-in"></i>
+                لينكد إن
+            </button>
+            <button class="share-btn whatsapp" data-platform="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                واتساب
+            </button>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="related-articles">
+            <h3>مقالات ذات صلة</h3>
+            <div class="related-grid">
+                <div class="related-card">
+                    <h4><a href="#" style="color: #0066FF;">مجالات الربح من الإنترنت</a></h4>
+                    <p>تعرف على أفضل الطرق لكسب المال من الإنترنت</p>
+                </div>
+                <div class="related-card">
+                    <h4><a href="#" style="color: #0066FF;">أسرار كسب المال مع YouGov</a></h4>
+                    <p>دليل شامل للربح من منصة YouGov</p>
+                </div>
+                <div class="related-card">
+                    <h4><a href="#" style="color: #0066FF;">أفضل تطبيقات الأندرويد المجانية</a></h4>
+                    <p>مجموعة مختارة من التطبيقات المفيدة</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>مدونة المحترف</h3>
+                    <p>محطة المعرفة والإبتكار في عالم التقنية والربح من الإنترنت</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html#blog">تدوينات</a></li>
+                        <li><a href="index.html#money">الربح المال</a></li>
+                        <li><a href="index.html#android">أندرويد</a></li>
+                        <li><a href="index.html#templates">قوالب</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 مدونة المحترف | حصري التقنية. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js"></script>
+    <script>
+        // Enhanced social sharing for article page
+        document.querySelectorAll('.share-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const platform = this.dataset.platform;
+                const url = encodeURIComponent(window.location.href);
+                const title = encodeURIComponent(document.title);
+                const text = encodeURIComponent('شاهد هذا المقال الرائع من مدونة المحترف');
+                
+                let shareUrl = '';
+                
+                switch(platform) {
+                    case 'facebook':
+                        shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+                        break;
+                    case 'twitter':
+                        shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+                        break;
+                    case 'linkedin':
+                        shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
+                        break;
+                    case 'whatsapp':
+                        shareUrl = `https://wa.me/?text=${text} ${url}`;
+                        break;
+                }
+                
+                if (shareUrl) {
+                    window.open(shareUrl, '_blank', 'width=600,height=400');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
